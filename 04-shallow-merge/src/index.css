@@ -50,3 +50,9 @@ body {
   border-color: rgb(35, 141, 35);
   color: #fff;
 }
+
+.counter div + button {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 0.8em;
+}
