@@ -56,3 +56,21 @@ body {
   margin-top: 20px;
   font-size: 0.8em;
 }
+
+/* Dark mode */
+.counter.dark,
+.counter.dark button {
+  background-color: #333;
+  border-color: #777;
+  color: #fff;
+}
+.counter.dark button:active,
+.counter.dark button:focus {
+  outline: none;
+  box-shadow: 0 0 2px 0 0 2px rgb(164, 113, 255);
+}
+.counter.dark button:active {
+  background-color: rgb(52, 4, 138);
+  border-color: rgb(83, 30, 177);
+  color: #fff;
+}
