@@ -1,20 +1,20 @@
 import React from 'react';
+import Item from './Item';
 
-const ItemPage = ({ items }) => (
+const ItemPage = ({ items, onAddToCart }) => (
   <div className="ItemPage">
     <h2>Items for Sale</h2>
     {items.map(item => (
-      <Item key={item.id} item={item} />
+      <Item key={item.id} item={item}>
+        <button
+          className="add"
+          onClick={() => onAddToCart(item)}
+        >
+          Add to Cart
+        </button>
+      </Item>
     ))}
   </div>
-);
-
-const Item = ({ item }) => (
-  <li className="Item">
-    {item.name}
-    <span className="price">${item.price}</span>
-    <button className="add">Add to Cart</button>
-  </li>
 );
 
 export default ItemPage;
